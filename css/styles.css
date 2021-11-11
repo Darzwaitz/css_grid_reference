@@ -17,6 +17,8 @@
 
 .item--1 {
   background-color: orange;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .item--2 {
@@ -29,13 +31,17 @@
 
 .item--4 {
   background-color: pink;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
 }
 
 .item--5 {
   background-color: blue;
+  grid-area: 2 / 3 / 3 / 4;
 }
 
 .item--6 {
   background-color: brown;
+  grid-area: 1 / 2 / 2 / 3;
 }
 /*# sourceMappingURL=styles.css.map */
