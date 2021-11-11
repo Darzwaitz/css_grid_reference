@@ -23,6 +23,7 @@
 
 .item--2 {
   background-color: green;
+  grid-column: 1 / -1;
 }
 
 .item--3 {
