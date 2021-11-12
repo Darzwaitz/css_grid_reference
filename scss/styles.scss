@@ -1,4 +1,5 @@
 .container{
+    // display: none;
     background-color: #eee;
     width: 1000px;
     margin: 30px auto;
@@ -50,5 +51,37 @@ grid-template-columns: repeat(3, 1fr);
     &--6 {
         background-color: brown;    
         grid-area: 1 / 2 / 2 / 3;    
+    }
+}
+
+.challenge{
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: 100px 200px 400px 100px;
+    grid-template-columns: repeat(3, 1fr) 200px;
+    grid-gap: 30px;
+
+    & > * {
+        background-color: orangered;
+        padding: 20px;
+        color: #ffffff;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .header{
+        grid-column: 1 / -1;
+    }
+    .sidebar{
+        grid-column: 4 / -1;
+        grid-row: 2 / span 2;
+    }
+    .maincontent{
+        grid-column: 1 / span 3;
+    }
+    .footer{
+        grid-column: 1 / -1;
     }
 }
